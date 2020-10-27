@@ -1,13 +1,13 @@
 {
   "comment":
-    "Modified from the original ASP bundle. Originally modified by Thomas Aylott subtleGradient.com",
-  "fileTypes": ["bas", "cls", "frm", "sht", "wbk"],
+    "Modified from spense01.vba",
+  "fileTypes": ["lss"],
   "foldingStartMarker":
-    "(<(?i:(head|table|div|style|script|ul|ol|form|dl))\\b.*?>|\\{|^\\s*<?%?\\s*'?\\s*(?i:(sub|private\\s+Sub|public\\s+Sub|function|if|while|For))\\s*.*$)",
+    "(<(?i:(head|table|div|style|script|ul|ol|form|dl))\\b.*?>|\\{|^\\s*<?%?\\s*'?\\s*(?i:(sub|private\\s+Sub|public\\s+Sub|function|property|if|while|For|Class))\\s*.*$)",
   "foldingStopMarker":
     "(</(?i:(head|table|div|style|script|ul|ol|form|dl))>?|\\}|^\\s*<?%?\\s*\\s*'?\\s*(?i:(end|Next))\\s*.*$)",
   "keyEquivalent": "^~A",
-  "name": "VBA",
+  "name": "LotusScript",
   "patterns": [
     {
       "match": "\\n",
@@ -72,7 +72,7 @@
     },
     {
       "match":
-        "(?i:\\b(If|Then|Else|ElseIf|End If|While|Wend|For|To|Each|In|Step|Case|Select|End Select|Return|Continue|Do|Until|Loop|Next|With|End With|Exit Do|Exit For|Exit Function|Exit Property|Exit Sub|IIf)\\b)",
+        "(?i:\\b(If|Then|As|Else|ElseIf|End If|While|Wend|For|To|Each|In|Step|Case|Select|End Select|Return|Continue|Do|Until|Loop|Next|With|End With|Exit Do|Exit For|Exit Function|Exit Property|Exit Sub|IIf)\\b)",
       "name": "keyword.control.asp"
     },
     {
@@ -97,7 +97,7 @@
     },
     {
       "match":
-        "(?i:\\s*\\b(Const|Dim|As|ReDim|Function|Sub|End|Enum|Type|Public|Private|Friend|Implements|Call|Set|Let|Get|New|Randomize|Option Explicit|On Error Resume Next|On Error GoTo|ByRef|ByVal|Public Function|Private Function|Preserve)\\b\\s*)",
+        "(?i:\\s*\\b(Const|Dim|As|ReDim|Private|Function|Property|Sub|End|Enum|Type|Public|Private|Declare|Class|Friend|Implements|Call|Set|Let|Get|New|Randomize|Option Explicit|Option Declare|Option Public|On Error Resume Next|On Error GoTo|ByRef|ByVal|Public Function|Private Function|Public Class|Private Class|Public Property|Private Property|Preserve)\\b\\s*)",
       "name": "storage.type.asp"
     },
     {
@@ -126,6 +126,34 @@
         {
           "match": "\"\"",
           "name": "constant.character.escape.apostrophe.asp"
+        }
+      ]
+    },
+    {
+      "begin": "{",
+      "beginCaptures": [
+        {
+          "name": "punctuation.definition.string.begin.asp"
+        }
+      ],
+      "end": "}",
+      "endCaptures": [
+        {
+          "name": "punctuation.definition.string.end.asp"
+        }
+      ]
+    },
+    {
+      "begin": "|",
+      "beginCaptures": [
+        {
+          "name": "punctuation.definition.string.begin.asp"
+        }
+      ],
+      "end": "|",
+      "endCaptures": [
+        {
+          "name": "punctuation.definition.string.end.asp"
         }
       ]
     },
@@ -200,7 +228,7 @@
     },
     {
       "match":
-        "!|\\$|%|&|=|<=|>=|<>|<|>|!|^|&&|\\|\\b(mod|in|new|delete|typeof)\\b",
+        "!|\\$|%|&|=|<=|>=|<>|<|>|!|^|&&|\\|\\b(mod|in|new|delete|typeof|as)\\b",
       "name": "keyword.operator.js"
     }
   ],
@@ -221,11 +249,11 @@
       "name": "meta.round-brackets",
       "patterns": [
         {
-          "include": "source.vba"
+          "include": "source.lotusscript"
         }
       ]
     }
   },
-  "scopeName": "source.vba",
+  "scopeName": "source.lotusscript",
   "uuid": "7F9C9343-D48E-4E7D-BFE8-F680714DCD3E"
 }

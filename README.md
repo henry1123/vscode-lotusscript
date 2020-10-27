@@ -1,12 +1,12 @@
-# VSCode VBA
+# VSCode LotusScript
 
-[![Marketplace Version](https://vsmarketplacebadge.apphb.com/version/spences10.vba.svg)](https://marketplace.visualstudio.com/items?itemName=spences10.vba)
-[![Installs](https://vsmarketplacebadge.apphb.com/installs/spences10.vba.svg)](https://marketplace.visualstudio.com/items?itemName=spences10.vba)
-[![Rating](https://vsmarketplacebadge.apphb.com/rating/spences10.vba.svg)](https://marketplace.visualstudio.com/items?itemName=spences10.vba)
+[![Marketplace Version](https://vsmarketplacebadge.apphb.com/version/henry1123.lotusscript.svg)](https://marketplace.visualstudio.com/items?itemName=henry1123.lotusscript)
+[![Installs](https://vsmarketplacebadge.apphb.com/installs/henry1123.lotusscript.svg)](https://marketplace.visualstudio.com/items?itemName=henry1123.lotusscript)
+[![Rating](https://vsmarketplacebadge.apphb.com/rating/henry1123.lotusscript.svg)](https://marketplace.visualstudio.com/items?itemName=henry1123.lotusscript)
 
 <!-- TOC depthFrom:2 -->
 
-- [VSCode VBA](#vscode-vba)
+- [VSCode LotusScript](#vscode-lotusscript)
   - [Syntax Highlighting](#syntax-highlighting)
   - [Snippets](#snippets)
     - [Basic code](#basic-code)
@@ -21,12 +21,12 @@
 
 ## Syntax Highlighting
 
-This package provides syntax highlighting and snippets of VBA.
+This package provides syntax highlighting and snippets of LotusScript.
 
 Based off an import of the
-[VBScript.tmLanguage](https://github.com/SublimeText/VBScript/blob/master/VBScript.tmLanguage)
+[VSCode VBA](https://github.com/spences10/vscode-vba)
 file from the
-[Sublime Text VBScript](https://github.com/SublimeText/VBScript)
+[Spences10.VBA](https://github.com/spences10/vscode-vba)
 repository.
 
 ## Snippets
@@ -45,7 +45,7 @@ Launch VS Code Quick Open (Ctrl+P), paste the following command, and
 press enter.
 
 ```
-ext install vba
+ext install lotusscript
 ```
 
 ## Contributing
@@ -60,8 +60,8 @@ reviewed and discussed.
 
 You can contact me in the following ways:
 
-- Mail : [spences10apps@gmail.com](mailto:spences10apps@gmail.com)
-- Github : [spences10](https://github.com/spences10)
+- Mail : [henry1123@gmail.com](mailto:henry1123@gmail.com)
+- Github : [henry1123](https://github.com/henry1123)
 
 ## Links
 

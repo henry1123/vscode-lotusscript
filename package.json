@@ -1,10 +1,10 @@
 {
-  "name": "vba",
-  "displayName": "VSCode VBA",
-  "description": "VBA language syntax highlighting support and code snippets for VSCode",
-  "version": "1.6.2",
+  "name": "LotusScript",
+  "displayName": "VSCode LotusScript",
+  "description": "LotusScript language syntax highlighting support and code snippets for VSCode",
+  "version": "0.1.0",
   "icon": "images/logo.png",
-  "publisher": "spences10",
+  "publisher": "henry1123",
   "engines": {
     "vscode": "^1.47.0"
   },
@@ -14,41 +14,37 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/spences10/vscode-vba.git"
+    "url": "https://github.com/henry1123/vscode-lotusscript.git"
   },
   "activationEvents": [
-    "onLanguage:vba"
+    "onLanguage:lotusscript"
   ],
   "main": "./out/extension.js",
   "contributes": {
     "languages": [
       {
-        "id": "vba",
+        "id": "lotusscript",
         "aliases": [
-          "VBA",
-          "vba"
+          "LotusScript",
+          "lotusscript"
         ],
         "extensions": [
-          ".bas",
-          ".cls",
-          ".frm",
-          ".sht",
-          ".wbk"
+          ".lss"
         ],
-        "configuration": "./vba.configuration.json"
+        "configuration": "./lotusscript.configuration.json"
       }
     ],
     "grammars": [
       {
-        "language": "vba",
-        "scopeName": "source.vba",
-        "path": "./syntaxes/vba.json"
+        "language": "lotusscript",
+        "scopeName": "source.lotusscript",
+        "path": "./syntaxes/lotusscript.json"
       }
     ],
     "snippets": [
       {
-        "language": "vba",
-        "path": "./snippets/vba.json"
+        "language": "lotusscript",
+        "path": "./snippets/lotusscript.json"
       }
     ]
   },

@@ -3,13 +3,13 @@
 //   https://github.com/Gimly/vscode-fortran/blob/229cddce53a2ea0b93032619efeef26376cd0d2c/src/documentSymbolProvider.ts
 import vscode = require('vscode');
 
-export class VbaDocumentSymbolProvider implements vscode.DocumentSymbolProvider {
+export class LotusscriptDocumentSymbolProvider implements vscode.DocumentSymbolProvider {
 
     public provideDocumentSymbols(
         document: vscode.TextDocument,
         token: vscode.CancellationToken): vscode.SymbolInformation[] {
 
-        console.log('VbaDocumentSymbolProvider.provideDocumentSymbols');
+        console.log('LotusscriptDocumentSymbolProvider.provideDocumentSymbols');
         // [Public | Private | Friend] [Static] Function name [(arglist)] [As type]
         // [Public | Private | Friend] [Static] Sub name [(arglist)]
         const functionRegex = /^\s*((Public|Private|Friend)\s+)?((Static)\s+)?(Function|Sub)\s+(\w+)/i;
