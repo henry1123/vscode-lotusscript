@@ -65,8 +65,8 @@ You can contact me in the following ways:
 
 ## Links
 
-- [Source Code](https://github.com/spences10/vscode-vba)
-- [Market](https://marketplace.visualstudio.com/items?itemName=spences10.VBA)
+- [Source Code](https://github.com/henry1123/vscode-lotusscript)
+- [Market](https://marketplace.visualstudio.com/items?itemName=henry1123.LotusScript)
 
 ## Handy links
 
@@ -77,44 +77,10 @@ To get to your token creation, go here:
 
 - https://YOUR_USER_NAME.visualstudio.com/_details/security/tokens
 
-**Create a token:**
-
-- Name: vsce
-- Organisation: All accessible organizations
-- show all scopes, select:
-  - Marketplace
-    - Check Acquire and Manage
-
-**Publish with CLI:**
-
-```bash
-# login
-vsce login <publisher name>
-vsce package
-# myExtension.vsix generated
-# bump version
-vsce publish minor # | major | patch
-# vsce publish major, minor or patch
-vsce publish -p <add created token here>
-```
-
-If you get `ERROR Failed request: (401)` see here:
-
-- https://github.com/Microsoft/vscode-vsce/issues/11
-
-Some good documentation on publishing with the CLI:
-
-- https://code.visualstudio.com/api/working-with-extensions/publishing-extension
 
 ## Version history
 
 ```
-20200405 - Added basic If snippet, and changed all snippets to use tabs (for user customisation capability).
-20200405 - Multi-line comment capability
-20200405 - Added certain keywords e.g. Type, Enum, Implements, Optional, Friend, ... Also changed behavior of some keywords, e.g. "End","Function","Sub" instead of "End Function", "End Sub" etc..
-20200405 - Removal of non-vba behavior.
-20200714 - [Comment with REM].
+20201027 - New Import From spences10.vba.
 ```
 
-<!-- Links -->
-[Comment with REM]:https://github.com/spences10/vscode-vba/pull/13

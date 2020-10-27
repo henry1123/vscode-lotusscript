@@ -106,7 +106,7 @@
     },
     {
       "match": "(?i:\\s*\\b(Empty|False|Nothing|Null|True)\\b)",
-      "name": "constant.language.asp"
+      "name": "constant.language.asp" 
     },
     {
       "begin": "\"",

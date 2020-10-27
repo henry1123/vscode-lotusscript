@@ -9,7 +9,7 @@ export class LotusscriptDocumentSymbolProvider implements vscode.DocumentSymbolP
         document: vscode.TextDocument,
         token: vscode.CancellationToken): vscode.SymbolInformation[] {
 
-        console.log('LotusscriptDocumentSymbolProvider.provideDocumentSymbols');
+        //console.log('LotusscriptDocumentSymbolProvider.provideDocumentSymbols');
         // [Public | Private | Friend] [Static] Function name [(arglist)] [As type]
         // [Public | Private | Friend] [Static] Sub name [(arglist)]
         const functionRegex = /^\s*((Public|Private|Friend)\s+)?((Static)\s+)?(Function|Sub)\s+(\w+)/i;
