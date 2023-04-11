@@ -71,6 +71,24 @@
       ]
     },
     {
+      "comment":"Comment blocks like %REM ... %END REM",
+      "begin": "%REM",
+      "beginCaptures": {
+        "0": { "name": "COMMENT_OPEN" }
+      },
+      "end":"%END REM",
+      "endCaptures": { 
+        "0": {"name": "END_COMMENT"}
+      },
+      "name": "comment.line.apostrophe.asp",
+      "patterns": [
+        {
+          "match": "\\s_\\s*\\n",
+          "name": "comment.line.escape.apostrophe.asp"
+        }
+      ]
+    },
+    {
       "match":
         "(?i:\\b(If|Then|As|Else|ElseIf|End If|While|Wend|For|To|Each|In|Step|Case|Select|End Select|Return|Continue|Do|Until|Loop|Next|With|End With|Exit Do|Exit For|Exit Function|Exit Property|Exit Sub|IIf)\\b)",
       "name": "keyword.control.asp"
