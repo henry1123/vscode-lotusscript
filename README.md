@@ -5,10 +5,7 @@
   - [Snippets](#snippets)
     - [Basic code](#basic-code)
   - [Contributing](#contributing)
-  - [Links](#links)
-  - [Handy links](#handy-links)
-  - [Version history](#version-history)
-
+  
 <!-- /TOC -->
 
 ## Syntax Highlighting
@@ -39,9 +36,4 @@ Any contributions, large or small, major features, bugfixes and
 integration tests are welcomed and appreciated but will be thoroughly
 reviewed and discussed.
 
-## Version history
-
-```
-20201027 - New Import From spences10.vba.
-```
 
